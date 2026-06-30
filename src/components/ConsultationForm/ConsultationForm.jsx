@@ -13,7 +13,7 @@ const countries = [
 ];
 
 const inputClasses =
-  "w-full h-[50px] rounded-[10px] border border-input-border px-4 text-sm font-normal text-[#2b2f38] bg-white outline-none transition-all duration-300 placeholder:text-[#aeb3bd] focus:border-focus-blue focus:shadow-[0_0_0_3px_rgba(12,140,233,0.12)]";
+  "w-full h-[46px] rounded-[10px] border border-input-border px-4 text-sm font-normal text-[#2b2f38] bg-white outline-none transition-all duration-300 placeholder:text-[#aeb3bd] focus:border-focus-blue focus:shadow-[0_0_0_3px_rgba(12,140,233,0.12)]";
 
 const ConsultationForm = () => {
   const [formData, setFormData] = useState({
@@ -36,9 +36,9 @@ const ConsultationForm = () => {
   };
 
   return (
-    <div className="w-full md:w-[470px] max-w-full bg-white rounded-card shadow-card p-6 md:p-[35px]">
+    <div className="w-full md:w-[410px] max-w-full bg-white rounded-card shadow-card p-4 md:p-5">
       {/* Header */}
-      <div className="flex items-start justify-between gap-3 mb-6 flex-wrap">
+      <div className="flex items-start justify-between gap-3 mb-4 flex-wrap">
         <div className="flex items-start gap-3.5">
           <span className="w-[46px] h-[46px] flex-shrink-0 rounded-xl bg-gradient-to-br from-[#2bb8c4] to-[#1496a6] text-white flex items-center justify-center text-lg">
             <FaFileAlt />
@@ -60,7 +60,10 @@ const ConsultationForm = () => {
       {/* Form */}
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <div className="flex flex-col gap-2">
-          <label htmlFor="fullName" className="text-[13px] font-semibold text-[#2b2f38]">
+          <label
+            htmlFor="fullName"
+            className="text-[13px] font-semibold text-[#2b2f38]"
+          >
             Full Name
           </label>
           <input
@@ -76,7 +79,10 @@ const ConsultationForm = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="flex flex-col gap-2">
-            <label htmlFor="email" className="text-[13px] font-semibold text-[#2b2f38]">
+            <label
+              htmlFor="email"
+              className="text-[13px] font-semibold text-[#2b2f38]"
+            >
               Email
             </label>
             <input
@@ -90,7 +96,10 @@ const ConsultationForm = () => {
             />
           </div>
           <div className="flex flex-col gap-2">
-            <label htmlFor="phone" className="text-[13px] font-semibold text-[#2b2f38]">
+            <label
+              htmlFor="phone"
+              className="text-[13px] font-semibold text-[#2b2f38]"
+            >
               Phone Number
             </label>
             <input
@@ -106,7 +115,10 @@ const ConsultationForm = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="destination" className="text-[13px] font-semibold text-[#2b2f38]">
+          <label
+            htmlFor="destination"
+            className="text-[13px] font-semibold text-[#2b2f38]"
+          >
             Destination Country
           </label>
           <select
@@ -125,7 +137,10 @@ const ConsultationForm = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="bestTime" className="text-[13px] font-semibold text-[#2b2f38]">
+          <label
+            htmlFor="bestTime"
+            className="text-[13px] font-semibold text-[#2b2f38]"
+          >
             Best Time to Contact
           </label>
           <input
@@ -140,7 +155,10 @@ const ConsultationForm = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="text-[13px] font-semibold text-[#2b2f38]">
+          <label
+            htmlFor="message"
+            className="text-[13px] font-semibold text-[#2b2f38]"
+          >
             Message
           </label>
           <textarea
@@ -150,7 +168,7 @@ const ConsultationForm = () => {
             rows="3"
             value={formData.message}
             onChange={handleChange}
-            className="w-full min-h-[90px] rounded-[10px] border border-input-border px-4 py-3.5 text-sm font-normal text-[#2b2f38] bg-white outline-none transition-all duration-300 placeholder:text-[#aeb3bd] focus:border-focus-blue focus:shadow-[0_0_0_3px_rgba(12,140,233,0.12)] resize-y"
+            className="w-full min-h-[80px] rounded-[10px] border border-input-border px-4 py-3 text-sm font-normal text-[#2b2f38] bg-white outline-none transition-all duration-300 placeholder:text-[#aeb3bd] focus:border-focus-blue focus:shadow-[0_0_0_3px_rgba(12,140,233,0.12)] resize-y"
           />
         </div>
 
