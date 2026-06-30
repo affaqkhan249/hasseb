@@ -18,7 +18,7 @@ const Navbar = () => {
     <header className="absolute inset-x-0 top-0 z-40">
       {/* ---------- Top Header ---------- */}
       <div className="w-full bg-primary-navy/95 backdrop-blur-xl py-3 md:py-0 md:h-[75px] flex items-center">
-        <div className="w-full max-w-[1200px] mx-auto px-6 md:px-8 lg:px-10 flex flex-wrap items-center justify-between gap-3">
+        <div className="w-full max-w-[980px] mx-auto px-6 md:px-8 lg:px-10 flex flex-wrap items-center justify-between gap-3">
           {/* Logo */}
           <a
             href="/"
@@ -81,10 +81,10 @@ const Navbar = () => {
 
       {/* ---------- Floating Navigation ---------- */}
       <nav
-        className="relative w-full flex justify-center mt-6 z-40"
+        className="relative w-full flex justify-center mt-4 z-40"
         aria-label="Primary navigation"
       >
-        <div className="w-[calc(100%-40px)] md:w-[calc(100%-80px)] lg:w-[calc(100%-100px)] max-w-[1200px] bg-primary-navy/75 rounded-[24px] shadow-nav border border-white/10 flex flex-wrap items-center justify-between px-4 md:px-6 lg:px-8 py-3 md:py-3 md:pl-7 backdrop-blur-sm">
+        <div className="w-[calc(100%-52px)] md:w-[calc(100%-100px)] lg:w-[calc(100%-108px)] max-w-[960px] bg-primary-navy/75 rounded-[24px] shadow-nav border border-white/10 flex flex-wrap items-center justify-between px-5 md:px-6 lg:px-8 py-2.5 md:py-2.5 md:pl-7 backdrop-blur-sm">
           {/* Mobile toggle */}
           <button
             className="md:hidden text-white text-xl"
@@ -110,7 +110,7 @@ const Navbar = () => {
                     setActive(link);
                     setMenuOpen(false);
                   }}
-                  className={`flex items-center gap-1.5 w-full md:w-auto whitespace-nowrap text-sm font-medium tracking-wide px-4 md:px-[18px] py-3 rounded-full transition-colors duration-300 cursor-pointer ${
+                  className={`flex items-center gap-1.5 w-full md:w-auto whitespace-nowrap text-sm font-medium tracking-wide px-5 md:px-[20px] py-3 rounded-full transition-colors duration-300 cursor-pointer ${
                     active === link
                       ? "bg-white text-primary-navy font-semibold"
                       : "text-white/80 hover:text-white hover:bg-white/10"

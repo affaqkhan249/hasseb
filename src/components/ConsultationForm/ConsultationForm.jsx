@@ -13,7 +13,7 @@ const countries = [
 ];
 
 const inputClasses =
-  "w-full h-[46px] rounded-[10px] border border-input-border px-4 text-sm font-normal text-[#2b2f38] bg-white outline-none transition-all duration-300 placeholder:text-[#aeb3bd] focus:border-focus-blue focus:shadow-[0_0_0_3px_rgba(12,140,233,0.12)]";
+  "w-full h-[36px] rounded-[10px] border border-input-border px-4 text-sm font-medium text-[#2b2f38] bg-white outline-none transition-all duration-300 placeholder:text-[#aeb3bd] focus:border-focus-blue focus:shadow-[0_0_0_3px_rgba(12,140,233,0.12)]";
 
 const ConsultationForm = () => {
   const [formData, setFormData] = useState({
@@ -36,9 +36,9 @@ const ConsultationForm = () => {
   };
 
   return (
-    <div className="w-full md:w-[410px] max-w-full bg-white rounded-card shadow-card p-4 md:p-5">
+    <div className="w-full md:w-[500px] max-w-full bg-white rounded-card shadow-card p-3 md:p-4">
       {/* Header */}
-      <div className="flex items-start justify-between gap-3 mb-4 flex-wrap">
+      <div className="flex items-start justify-between gap-3 mb-3 flex-wrap">
         <div className="flex items-start gap-3.5">
           <span className="w-[46px] h-[46px] flex-shrink-0 rounded-xl bg-gradient-to-br from-[#2bb8c4] to-[#1496a6] text-white flex items-center justify-center text-lg">
             <FaFileAlt />
@@ -58,8 +58,8 @@ const ConsultationForm = () => {
       </div>
 
       {/* Form */}
-      <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-        <div className="flex flex-col gap-2">
+      <form className="flex flex-col gap-1.5" onSubmit={handleSubmit}>
+        <div className="flex flex-col gap-1.5">
           <label
             htmlFor="fullName"
             className="text-[13px] font-semibold text-[#2b2f38]"
@@ -77,7 +77,7 @@ const ConsultationForm = () => {
           />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5">
           <div className="flex flex-col gap-2">
             <label
               htmlFor="email"
@@ -114,7 +114,7 @@ const ConsultationForm = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1.5">
           <label
             htmlFor="destination"
             className="text-[13px] font-semibold text-[#2b2f38]"
@@ -136,7 +136,7 @@ const ConsultationForm = () => {
           </select>
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1.5">
           <label
             htmlFor="bestTime"
             className="text-[13px] font-semibold text-[#2b2f38]"
@@ -154,7 +154,7 @@ const ConsultationForm = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1.5">
           <label
             htmlFor="message"
             className="text-[13px] font-semibold text-[#2b2f38]"
@@ -168,13 +168,13 @@ const ConsultationForm = () => {
             rows="3"
             value={formData.message}
             onChange={handleChange}
-            className="w-full min-h-[80px] rounded-[10px] border border-input-border px-4 py-3 text-sm font-normal text-[#2b2f38] bg-white outline-none transition-all duration-300 placeholder:text-[#aeb3bd] focus:border-focus-blue focus:shadow-[0_0_0_3px_rgba(12,140,233,0.12)] resize-y"
+            className="w-full min-h-[60px] rounded-[10px] border border-input-border px-4 py-3 text-sm font-normal text-[#2b2f38] bg-white outline-none transition-all duration-300 placeholder:text-[#aeb3bd] focus:border-focus-blue focus:shadow-[0_0_0_3px_rgba(12,140,233,0.12)] resize-y"
           />
         </div>
 
         <button
           type="submit"
-          className="mt-1.5 w-full h-14 rounded-full bg-gradient-to-br from-light-gold to-gold hover:from-[#c8a04e] hover:to-gold-hover text-dark-navy font-bold text-[15px] tracking-wide flex items-center justify-center gap-2.5 transition-all duration-300 shadow-gold hover:shadow-gold-lg hover:-translate-y-0.5"
+          className="mt-3 w-full h-12 rounded-full bg-gradient-to-br from-light-gold to-gold hover:from-[#c8a04e] hover:to-gold-hover text-dark-navy font-bold text-[14px] tracking-wide flex items-center justify-center gap-2 transition-all duration-300 shadow-gold hover:shadow-gold-lg hover:-translate-y-0.5"
         >
           Enquire Now
           <FaArrowRight aria-hidden="true" />
